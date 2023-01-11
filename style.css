@@ -1,0 +1,829 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background: #FFA1C9;
+}
+html{
+    scroll-behavior: smooth;
+}
+hr{
+    height: 2px;
+    background: #f391a2;
+    border: none;
+}
+.head{
+    display: flex;
+    /* background:linear-gradient(20deg,#FFAFBD,#ff9dad,#f391a2);    */
+    background-color: #E60965;
+    height: 6vw;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;    
+    color: whitesmoke;
+    box-shadow: #F94892 5px 3px 10px,
+    5px 3px 10px ;
+    z-index: 2;
+    position: sticky;
+    top: 0;
+}
+ a{
+     text-decoration: none;
+     color: whitesmoke;
+     outline: none;
+     font-size: 0.9em;
+    text-shadow: #FFA1C9 4px 2px 5px;
+    scroll-behavior: auto;
+    font-family:century;
+
+}
+a:hover{
+    border-bottom: 2px dotted white;
+    font-size:0.9em ;
+    transition: 0.2s;
+    color: whitesmoke;
+}
+
+.logo-name{
+    font-size: 2.5em  ;
+    color:  whitesmoke;
+    text-shadow: indianred 4px 2px 10px;
+    font-family:century;
+}
+.container{
+    max-width: 1200px;
+    height: 80vh;
+    margin: auto;
+    outline: none;
+    overflow: hidden;
+    
+}
+.slide_inner{
+    min-height: 70vh;
+    position: relative;
+    
+}
+.slide_holder {
+    background: url(./Img/1st.jpg) center/cover no-repeat; 
+    border-radius: 5px;
+    overflow: hidden;
+    
+}
+
+.slide_content{
+    max-width: 600px;
+    width: 100%;
+    background: rgba( 255, 255, 255, 0.2 );
+box-shadow: 0 8px 32px 0 rgba(167, 168,  98, 0.37);
+backdrop-filter: blur( 4.5px );
+-webkit-backdrop-filter: blur( 4.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 30px;
+    position: absolute;
+    right: 0;
+    bottom: 5%;
+    border-radius: 15px;
+    color: black;
+    text-shadow: none;
+}
+
+.slide_holder:nth-child(2){
+    background: url(./Img/engin-akyurt-g-m8EDc4X6Q-unsplash.jpg) center/cover no-repeat;
+    background-size: cover;
+}
+.slide_holder:nth-child(3) { 
+    background: url(./Img/sucessful-makeup-artist-en.jpg) center/cover no-repeat;
+    background-size: cover;
+
+}
+.slide_holder:nth-child(4) { 
+    background: url(./Img/giorgio-trovato-gb6gtiTZKB8-unsplash.jpg) center/cover no-repeat;
+}
+.slide_holder:nth-child(5) { 
+    background: url(./Img/hairstyle.jpg) center/cover no-repeat;
+}
+.slide_holder:nth-child(6) { 
+    background: url(./Img/istockphoto-1286682876-612x612.jpg) center/cover no-repeat;
+}
+.slide_holder{
+    padding: 15px;
+}
+
+
+ .arrow {
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    background: url(./Img/Antu_arrow-right.svg);
+    z-index: 1;
+    top: 50%;
+    cursor: pointer;
+    transition: .3s ease;
+    opacity: 0;
+}
+.slide_wrapper{
+    position: relative;
+ }
+ .prev{
+    left: 15px;
+    height: 40px;
+    width: 40px;
+    transform: rotate(180deg);
+   
+}
+.next{
+    right: 15px;
+
+} 
+.container:hover .arrow{
+    opacity:0.5;
+}
+.container:hover  .arrow:hover{
+    opacity: 1;
+}
+.service{
+    height: auto;
+    background: url(./Img/bg.jpg) no-repeat center/cover;
+    margin-top: -15px;
+}
+.card-container{
+    display: flex;
+    flex-direction: column;
+    
+}
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin:15px;
+    flex-wrap: wrap;
+    
+}
+.card{
+    width: 200px;
+    height: 250px;
+    background: transparent;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background: rgba( 255, 255, 255, 0.2 );
+    box-shadow: 0 8px 32px 0 rgba(167, 168,  98, 0.37);
+    backdrop-filter: blur( 4.5px );
+    -webkit-backdrop-filter: blur( 4.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card li{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    color: #E60965;
+    background: #FBE5E5;
+    width: 100%;
+}
+.card img{
+    width: 50%;
+    height: 30%;
+     margin-top: 5px;
+    
+      
+}
+::-webkit-scrollbar{
+    background-color: transparent;
+    border-radius: 25px;
+    width: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(transparent,transparent);
+}
+
+
+.Products{
+    height: 100vh;  
+    position: relative;
+    display: grid;
+    place-items: center;
+}
+.Products img{
+    width:100%;
+    height: 93vh;
+}
+.Products h1{
+    position:absolute;
+    font-size: 3.5em;
+    color: white;
+    z-index: 1;
+    background: rgba(16, 137, 236, 0.48);
+    box-shadow: 0 8px 32px 0 rgba(167, 168,  98, 0.37);
+    backdrop-filter: blur( 4.5px );
+    -webkit-backdrop-filter: blur( 4.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+}
+.appointment{
+    height: 90vh;
+    /* background:linear-gradient(20deg,#FFAFBD,#ff9dad,#f391a2);    */
+    background-color: #F94892;
+
+}
+.app{
+    background: #E60965;
+    height: 15vh;
+    position: relative;
+    border-bottom: rgba(0, 0, 0, 0.281) solid 3px ;
+    overflow: hidden;
+}
+.app h1{
+    position: absolute;
+    top: 15px;
+    left: 25px;
+    color: whitesmoke;
+    display: flex;
+}
+input{
+    border: none;
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.281) 1px 2px 3px;
+    border-radius: 2px;
+    padding: 5px 35px;
+    margin-bottom: 20px;
+}
+h4{
+    color: whitesmoke;
+}
+button {
+    padding: 10px 25px;
+    border-radius: 15px;
+    border: none;
+    position: absolute;
+    background-color: white;
+    right:15px;
+    box-shadow: rgba(43, 43, 43, 0.774) 4px 3px 4px;
+    cursor: pointer;
+}
+form{
+    margin-top: 20px;
+    margin-left: 45px;
+    justify-content: space-between  ;
+}
+.appointment img{
+    width: 40%;
+    position: relative;
+    z-index: 1;
+    top: -335px;
+    left: 45%;
+}
+.contact{
+    height: 90vh;
+    position: relative;
+    background: #F94892;
+    box-shadow: 5px 3px;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    justify-content: center;
+
+}
+
+.contact h1{
+    color: whitesmoke;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2.5em;
+    margin-top: 2%;
+
+    
+    
+}
+ 
+.loc{
+    width: 200px;
+    height: 300px;
+    background: linear-gradient(-25deg,#F94892,#F94892,#FFA1C9,#E60965);
+    overflow: hidden;
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    box-shadow: #FFA1C9 5px 3px  15px;
+
+
+}
+.loc img{
+    width: 50px;
+    filter: invert(1);
+   margin-left:40% ;
+   margin-top:25px;
+
+}
+.call{
+    width: 200px;
+    height: 300px;
+    background: linear-gradient(-25deg,#F94892,#F94892,#FFA1C9,#E60965);
+    overflow: hidden;
+    position: absolute;
+    bottom: 5%;
+    left: 40%;
+    box-shadow: #FFA1C9 5px 3px  15px;
+}
+.call img{
+    width: 50px;
+    filter: invert(1);
+    display: flex;
+   margin-left:40% ;
+   margin-top:25px;
+
+}
+.call a{
+    text-align: center;
+    font-size: 1em;
+    background: none;
+    color: whitesmoke;
+    text-align: center;
+    font-family: calibri;
+    margin-top: 5%;
+}
+.msg{
+    width: 200px;
+    height: 300px;
+    background: linear-gradient(-25deg,#F94892,#F94892,#FFA1C9,#E60965);
+    overflow: hidden;
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    box-shadow: #FFA1C9 5px 3px  10px;
+    
+}
+.msg img{
+    width: 50px;
+    filter: invert(1);
+    margin-left:40% ;
+    margin-top:25px;
+
+    
+}
+.contact p{
+    font-size: 1em;
+    background: none;
+    color: whitesmoke;
+    text-align: center;
+    font-family: calibri;
+    margin-top: 5%;
+}
+
+
+@media only screen and (max-width:321px) {
+    body{
+        background-attachment: fixed;
+}
+    .head{
+        height: 10vh;
+        width: 100%;
+    }
+    a{
+        display: none;
+    }
+  
+     .logo-name{
+        font-size: 1.4em;
+        align-self: center;
+    }
+    .container{
+        width: 100%;
+        height: 50vh;
+    }
+    .container:hover .arrow{
+        opacity: 0;
+    }
+    .slide_holder{
+        background: url(./Img/1st.jpg) no-repeat;
+        background-size: 100% 70%;
+    }
+    .slide_holder:nth-child(2){
+        background: url(./Img/engin-akyurt-g-m8EDc4X6Q-unsplash.jpg) no-repeat;
+        background-size: 100%;
+    }
+    .slide_holder:nth-child(3) { 
+        background: url(./Img/sucessful-makeup-artist-en.jpg) no-repeat ;
+        background-size: 100% 60%; 
+    }
+    .slide_holder:nth-child(4){
+        background: url(./Img/giorgio-trovato-gb6gtiTZKB8-unsplash.jpg) top/cover no-repeat;
+        background-size: 100% 60%; 
+    }
+    .slide_holder:nth-child(5) {
+        background: url(./Img/hairstyle.jpg) no-repeat;
+        background-size: 100% 60%; 
+    }
+    .slide_holder:nth-child(6) {
+        background: url(./Img/istockphoto-1286682876-612x612.jpg) no-repeat;
+        background-size: 100% 60%; 
+    }
+    .slide_content{
+        display: none;
+    }
+    .arrow{
+        display: none;
+    }
+    .service{
+        height: 155vh;
+    }
+    .service p{
+       position: relative;
+    }
+    .card-container{
+        display: flex;
+        flex-direction: row;
+     }
+     .card{
+        width: 100%;
+        height: 30%;
+    }
+    .card img{
+        width: 50%;
+        height: 30%;
+    }
+    .card li{
+        font-size: 0.7em;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content:center ;
+    }
+    .Products img{
+        width:100%;
+        height: 93vh;
+    }
+    .Products h1{
+        font-size: 3em;
+        position: absolute;
+        display: block;
+    }
+    .app{
+        height: 10vh;
+        overflow: hidden;
+    }
+    .app h1{
+        position: absolute;
+        top: 2px;
+        font-size: 1.7em;
+    }
+    input{
+        padding: 1px;
+    }
+    form{
+        margin-left: 10%;
+        justify-content: center;
+    }
+    .appointment img{
+        display: none;
+    }  
+    .contact {
+        height: 80vh;
+    }
+    .contact h1{
+        font-size: 1.8em;
+        position: absolute;
+        margin-left: -5%;
+    }
+    .concard p{
+        display: none;
+    }
+    .contact .concard{
+        width: 25vw;
+        height: 50vh;
+        position: absolute;
+        bottom: 15%;
+        word-break: keep-all;
+        background: transparent;
+        box-shadow: none;
+        overflow: scroll;
+        overflow-x: visible;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:space-between;
+        
+    }
+    .concard img{
+        width: 50%;
+        position: relative;
+        top: -20px;
+        justify-content: space-around;
+        left: -20%;
+    }
+    .concard :hover{
+        width: 25vw;
+        height: 15vw;
+    }
+    .concard:hover p{
+        display: block;
+    } 
+     .concard:hover img{
+        display: none;
+    }
+    ::-webkit-scrollbar-thumb{
+        background: linear-gradient(transparent,transparent);
+    }
+    ::-webkit-scrollbar{
+        display: none;
+    }
+
+}
+@media only screen and (max-width:376px) {
+    .head{
+        height: 15vh;
+        display: flex;
+    }
+    .logo-name{
+        font-size: 1.6em;
+        align-self: center;
+    }
+    a{
+        display: none;
+    }
+    .appointment img{
+        display: none;
+    }  
+    .container{
+        width: 100%;
+        height: 60vh;
+    }
+    .container:hover .arrow{
+        opacity: 0;
+    }
+    .slide_holder{
+        background: url(./Img/1st.jpg) no-repeat;
+        background-size: 100% 98%;
+    }
+    .slide_holder:nth-child(2){
+        background: url(./Img/engin-akyurt-g-m8EDc4X6Q-unsplash.jpg ) no-repeat;
+        background-size: 100% 98%;
+    }
+    .slide_holder:nth-child(3) { 
+        background: url(./Img/sucessful-makeup-artist-en.jpg) no-repeat ;
+        background-size: 100% 98%; 
+    }
+    .slide_holder:nth-child(4){
+        background: url(./Img/giorgio-trovato-gb6gtiTZKB8-unsplash.jpg) top/cover no-repeat;
+        background-size: 100% 98%; 
+    }
+    .slide_holder:nth-child(5) {
+        background: url(./Img/hairstyle.jpg) no-repeat;
+        background-size: 100% 98%; 
+    }
+    .slide_holder:nth-child(6) {
+        background: url(./Img/istockphoto-1286682876-612x612.jpg) no-repeat;
+        background-size: 100% 98%; 
+    }
+    .slide_content{
+        display: none;
+    }
+    .arrow{
+        display: none;
+    }
+    .service{
+        height: 200vh;
+    }
+    .card-container{
+        display: flex;
+        flex-direction: row;
+     }
+     .card img{
+        width: 50%;
+        height: 30%;
+    }
+     .card{
+        width: 100%;
+        height: 30%;
+    }
+    .card li{
+        font-size: 0.9em;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content:center ;
+    }
+    .Products h1{
+        font-size: 3em;
+        position: absolute;
+        display: block;
+    }
+    .appointment{
+        height: 105vh;
+    }
+    .contact .concard {
+        background: transparent;
+        box-shadow: none;
+        width: 28vw;
+        overflow: scroll;
+        overflow-x: visible;
+        margin: 2px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        top: 70px;
+        }
+    .contact h1{
+        font-size: 2em;
+        position: absolute;
+        left: 28%;
+    } 
+    .concard img{
+        width: 40%;
+        position: relative;
+        top: -20px;
+        justify-content: space-around;
+        left: -20%;
+    }
+    .concard p{
+        display: none;
+    }
+    .concard :hover{
+    width: 25vw;
+    height: 15vw;
+    }
+    .concard:hover p{
+    display: block;
+    } 
+    .concard:hover img{
+    display: none;
+    }
+}
+@media only screen and (max-width:760px) {
+    .head{
+        height: 15vh;
+        display: flex;
+    }   
+    .logo-name{
+        font-size: 1.8em;
+        align-self: center;
+    }
+    a{
+        display: none;
+    }
+    .appointment img{
+        display: none;
+    } 
+    .container{
+        width: 100%;
+        height: 60vh;
+    }
+    .container:hover .arrow{
+        opacity: 0;
+    }
+    .slide_holder{
+        background: url(./Img/1st.jpg) no-repeat;
+        background-size: 100% 98%;
+    }
+    .slide_holder:nth-child(2){
+        background: url(./Img/engin-akyurt-g-m8EDc4X6Q-unsplash.jpg ) no-repeat;
+        background-size: 100% 98%;
+    }
+    .slide_holder:nth-child(3) { 
+        background: url(./Img/sucessful-makeup-artist-en.jpg) no-repeat ;
+        background-size: 100% 98%; 
+    }
+    .slide_holder:nth-child(4){
+        background: url(./Img/giorgio-trovato-gb6gtiTZKB8-unsplash.jpg) top/cover no-repeat;
+        background-size: 100% 98%; 
+    }
+    .slide_holder:nth-child(5) {
+        background: url(./Img/hairstyle.jpg) no-repeat;
+        background-size: 100% 98%; 
+    }
+    .slide_holder:nth-child(6) {
+        background: url(./Img/istockphoto-1286682876-612x612.jpg) no-repeat;
+        background-size: 100% 98%; 
+    }
+    .slide_content{
+        display: none;
+    }
+    .arrow{
+        display: none;
+    }
+    .service{
+        height: auto;
+    }
+    .card-container{
+        display: flex;
+        flex-direction: row;
+     }
+     .card img{
+        width: 50%;
+        height: 30%;
+    }
+     .card{
+        width: 80%;
+        height: 30%;
+    }
+    .Products h1{
+        font-size: 3em;
+        position: absolute;
+        display: block;
+    }
+    .appointment{
+        height: 105vh;
+    }
+    .contact .concard {
+        background: transparent;
+        box-shadow: none;
+        width: 28vw;
+        overflow: scroll;
+        overflow-x: visible;
+        margin: 2px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        top: 70px;
+        }
+    .contact h1{
+        font-size: 2em;
+        position: absolute;
+        left: 30%;
+    } 
+    .concard img{
+        width: 40%;
+        position: relative;
+        top: -20px;
+        justify-content: space-around;
+        left: -20%;
+    }
+    .concard p{
+        display: none;
+    }
+    .concard :hover{
+    width: 25vw;
+    height: 15vw;
+    }
+    .concard:hover p{
+    display: block;
+    } 
+    .concard:hover img{
+    display: none;
+    }
+}
+@media only screen and (max-width:769px) {
+    .logo-name{
+        font-size: 1.9em;
+    }
+    .slide_holder{
+        background: url(./Img/1st.jpg) no-repeat;
+        background-size: 100% 98%;
+    }
+    .slide_holder:nth-child(2){
+        background: url(./Img/engin-akyurt-g-m8EDc4X6Q-unsplash.jpg ) no-repeat;
+        background-size: 100% 98%;
+    }
+    .slide_holder:nth-child(3) { 
+        background: url(./Img/sucessful-makeup-artist-en.jpg) no-repeat ;
+        background-size: 100% 98%; 
+    }
+    .slide_holder:nth-child(4){
+        background: url(./Img/giorgio-trovato-gb6gtiTZKB8-unsplash.jpg) top/cover no-repeat;
+        background-size: 100% 98%; 
+    }
+    .slide_holder:nth-child(5) {
+        background: url(./Img/hairstyle.jpg) no-repeat;
+        background-size: 100% 98%; 
+    }
+    .slide_holder:nth-child(6) {
+        background: url(./Img/istockphoto-1286682876-612x612.jpg) no-repeat;
+        background-size: 100% 98%; 
+    }
+    .concard{
+        position: absolute;
+        bottom: 5%;
+        width: 200px;
+        height: 250px;
+        box-shadow: none;
+    }
+   
+}
+@media only screen and (max-width:1025px){
+    .appointment{
+        height: 100vh;
+    }
+    .concard{
+        position: absolute;
+        bottom: 5%;
+        width: 200px;
+        height: 250px;
+        box-shadow: none;
+    }
+}
